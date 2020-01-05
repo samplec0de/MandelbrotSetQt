@@ -4,7 +4,7 @@
 
 #ifndef MANDELBROT_COMPLEX_H
 #define MANDELBROT_COMPLEX_H
-
+#include <cmath>
 
 class Complex {
 public:
@@ -15,6 +15,7 @@ public:
     Complex operator-(Complex const &obj) const;
     Complex operator*(Complex const &obj) const;
     Complex operator/(Complex const &obj) const;
+    double pointRadius();
 };
 
 

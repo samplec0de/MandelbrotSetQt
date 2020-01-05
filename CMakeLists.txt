@@ -16,6 +16,7 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 add_executable(Mandelbrot
         main.cpp
         Complex.cpp
+        mainwindow.cpp
         )
 
 target_link_libraries(Mandelbrot Qt5::Widgets)

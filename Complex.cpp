@@ -31,3 +31,7 @@ Complex Complex::operator/(Complex const &obj) const {
     return {(real * obj.real + imag * obj.imag) / (obj.real * obj.real + obj.imag * obj.imag),
             (imag * obj.real - real * obj.imag) / (obj.real * obj.real + obj.imag * obj.imag)};
 }
+
+double Complex::pointRadius() {
+    return sqrt(real * real + imag * imag);
+}
